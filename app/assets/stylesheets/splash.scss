@@ -1,0 +1,42 @@
+// Place all the styles related to the splash controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$main-color: #3778c2;
+$second-color: #5fb523;
+$text-color: #434b54;
+
+#splash_screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    margin: 25rem 0 0 0;
+    font-family: cursive;
+    color: $text-color;
+  }
+
+  .login {
+    font-size: 2rem;
+    background-color: $main-color;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    margin: 20rem 0 0 0;
+  }
+
+  .signup {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+  }
+}
