@@ -24,15 +24,6 @@ ActiveRecord::Schema.define(version: 2021_12_21_020615) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
-  create_table "groups_payments", force: :cascade do |t|
-    t.bigint "group_id", null: false
-    t.bigint "payment_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["group_id"], name: "index_groups_payments_on_group_id"
-    t.index ["payment_id"], name: "index_groups_payments_on_payment_id"
-  end
-
   create_table "payments", force: :cascade do |t|
     t.string "name"
     t.float "amount"
@@ -59,7 +50,5 @@ ActiveRecord::Schema.define(version: 2021_12_21_020615) do
   end
 
   add_foreign_key "groups", "users"
-  add_foreign_key "groups_payments", "groups"
-  add_foreign_key "groups_payments", "payments"
   add_foreign_key "payments", "users"
 end
