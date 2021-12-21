@@ -28,6 +28,10 @@ body {
   min-height: 100vh;
 }
 
+form {
+  /* width: 100%; */
+}
+
 #login,
 #signup {
   display: flex;
@@ -35,7 +39,25 @@ body {
   align-items: center;
 }
 
+.login_bar {
+  display: flex;
+  justify-content: end;
+}
+
+.login_bar h2 {
+  display: block;
+  text-align: center;
+}
+
+.actions_login {
+  
+}
+
 .notice_alert {
   text-align: center;
   font-size: 2rem;
+}
+
+.link_to_sign {
+  text-align: center;
 }
