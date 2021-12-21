@@ -27,3 +27,10 @@ html {
 body {
   min-height: 100vh;
 }
+
+#login,
+#signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
