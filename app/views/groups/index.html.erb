@@ -1,8 +1,14 @@
-<h1>Categories</h1>
+<div id='categories'>
+  <h1>Categories</h1>
 
-<% @groups.each do |group| %>
-    <p><%= group.name %></p>
-    <p><%= group.icon %></p>
-<% end %>
+  <% @groups.each do |group| %>
+    <%= link_to '/payments', :action => 'go' do %>
+      <div class='category'>
+        <p><%= group.icon %></p>
+        <p><%= group.name %></p>
+      </div>
+    <% end %>
+  <% end %>
 
-<%= link_to 'create new category', '/groups/new' %>
+  <%= link_to 'create new category', '/groups/new' %>
+</div>
