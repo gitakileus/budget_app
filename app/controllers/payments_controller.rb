@@ -8,12 +8,12 @@ class PaymentsController < ApplicationController
   end
 
   def create
-    @payment = current_user.groups.build(payment_params)
+    @payment = current_user.payments.build(payment_params)
 
     respond_to do |format|
       if @payment.save
         flash[:success] = 'Post saved successfully'
-        format.html { redirect_to '/groups' }
+        format.html { redirect_to '/payments' }
       else
         flash.now[:error] = 'Error: Post could not be saved'
         format.html { render :new }

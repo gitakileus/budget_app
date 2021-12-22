@@ -3,9 +3,8 @@
 
   <% @payments.each do |payment| %>
       <div class='payment'>
-        <p><%= payment.icon %></p>
         <p><%= payment.name %></p>
-        <p>$17.00</p>
+        <p><%= payment.amount %></p>
         <p><%= payment.created_at.strftime('%d-%b-%Y') %></p>
       </div>
   <% end %>
