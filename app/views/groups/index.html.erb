@@ -2,10 +2,12 @@
   <h1>Categories</h1>
 
   <% @groups.each do |group| %>
-    <%= link_to '/payments', :action => 'go' do %>
+    <%= link_to '/payments', :action => 'go', class: 'category_link' do %>
       <div class='category'>
         <p><%= group.icon %></p>
         <p><%= group.name %></p>
+        <p>$17.00</p>
+        <p><%= group.created_at.strftime('%d-%b-%Y') %></p>
       </div>
     <% end %>
   <% end %>
