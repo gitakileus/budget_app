@@ -13,13 +13,45 @@
   border: 1px solid gray;
   padding: 0.5rem;
   margin: 1rem 0 0 0;
+  justify-content: space-between;
+  background-color: white;
 
   p {
-  margin: 0 1rem;
+    margin: 0 1rem;
   }
-
 }
 
 .category_link {
   width: 90%;
+  text-decoration: none;
+}
+
+.icon,
+.name_date {
+  color: gray;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.name_date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+  margin: 0.5rem 0;
+  }
+}
+
+.total_amount {
+  display: flex;
+  align-items: center;
+  color: black;
 }
