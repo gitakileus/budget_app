@@ -1,16 +1,26 @@
 <div id='payments'>
   <div class='back_title'>
-    <%= link_to 'back', '/groups' %>
+    <%= link_to '/groups', class: 'payment_back' do %>
+      <i class="fa fa-arrow-left fa-2x"></i>
+    <% end %>
     <h1>Payments</h1>
   </div>
 
-  <% @payments.each do |payment| %>
-      <div class='payment'>
-        <p><%= payment.amount %></p>
-        <p><%= payment.name %></p>
-        <p><%= payment.created_at.strftime('%d-%b-%Y') %></p>
-      </div>
-  <% end %>
+  <div class='payments_section'>
+    <p class='total_payment'>Total Payment: <%= @group.total_amount %></p>
 
-  <%= link_to 'Add new payment', new_group_payment_path(group_id: @group) %>
+    <% @payments.each do |payment| %>
+        <div class='payment'>
+        <div class='name_date_payments'>
+          <p><%= payment.name %></p>
+          <p><%= payment.created_at.strftime('%d-%b-%Y') %></p>
+        </div>
+          <p>$<strong><%= payment.amount %></strong></p>
+        </div>
+    <% end %>
+  </div>
+
+  <div class='new_payment'>
+    <%= link_to 'ADD NEW PAYMENT', new_group_payment_path(group_id: @group), class: 'add_new_payment' %>
+  </div>
 </div>
