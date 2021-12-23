@@ -1,11 +1,15 @@
-<h1 class='hello_error'><%= flash[:error] %></h1>
+<div id='payment_form'>
+  <h1 class='hello_error'><%= flash[:error] %></h1>
 
-<%= form_with model: @payment, url: group_payments_path, class: 'form' do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= link_to 'Back', groups_url %>
 
-  <%= f.label :amount %>
-  <%= f.number_field :amount, step: 0.01 %>
+  <%= form_with model: @payment, url: group_payments_path, class: 'form' do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
 
-  <%= f.submit class: 'submit' %>
-<% end %>
+    <%= f.label :amount %>
+    <%= f.number_field :amount, step: 0.01 %>
+
+    <%= f.submit class: 'submit' %>
+  <% end %>
+</div>

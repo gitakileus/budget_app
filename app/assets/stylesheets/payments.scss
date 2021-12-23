@@ -9,6 +9,13 @@
   margin: 3rem 0;
 }
 
+#payment_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .back_title {
   display: flex;
   justify-content: space-between;

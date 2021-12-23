@@ -1,11 +1,15 @@
-<h1 class='hello_error'><%= flash[:error] %></h1>
+<div id='groups_new'>
+  <h1 class='hello_error'><%= flash[:error] %></h1>
 
-<%= form_with model: @group, class: 'form' do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= link_to 'Back', groups_url %>
 
-  <%= f.label :icon %>
-  <%= f.text_field :icon %>
+  <%= form_with model: @group, class: 'form' do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
 
-  <%= f.submit class: 'submit' %>
-<% end %>
+    <%= f.label :icon %>
+    <%= f.text_field :icon %>
+
+    <%= f.submit class: 'submit' %>
+  <% end %>
+</div>
