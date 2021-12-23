@@ -1,12 +1,14 @@
 <div id='login'>
-
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class='login_bar'>
-    <h2>LOGIN</h2>
-    <div class="actions_login">
-      <%= f.submit "Log in" %>
+    <div class='login_bar'>
+      <%= link_to '/', class: 'signup_back' do %>
+        <i class="fa fa-arrow-left fa-2x"></i>
+      <% end %>
+      <h2>LOGIN</h2>
+      <div class="actions_login">
+        <%= f.submit "Log in" %>
+      </div>
     </div>
-  </div>
 
     <div class="field">
       <%= f.email_field :email, placeholder: 'Email', autofocus: true, autocomplete: "email" %>
@@ -22,7 +24,6 @@
         <% f.label :remember_me %>
       </div>
     <% end %>
-
   <% end %>
 
   <%= render "devise/shared/links" %>
