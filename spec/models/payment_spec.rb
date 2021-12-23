@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Group, type: :model do
-  subject { Group.new(name: 'category name', icon: 'none') }
+RSpec.describe Payment, type: :model do
+  subject { Payment.new(name: 'payment name', amount: 2) }
 
   before { subject.save }
 
@@ -10,8 +10,8 @@ RSpec.describe Group, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'icon should be present' do
-    subject.icon = nil
+  it 'amount should be present' do
+    subject.amount = nil
     expect(subject).to_not be_valid
   end
 end
