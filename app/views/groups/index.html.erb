@@ -9,7 +9,7 @@
           <p><%= group.name %></p>
           <p><%= group.created_at.strftime('%d-%b-%Y') %></p>
         </div>
-        <p class='total_amount'>$17.00</p>
+        <p class='total_amount'><%= group.total_amount %></p>
       </div>
     <% end %>
   <% end %>
