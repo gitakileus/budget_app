@@ -1,6 +1,11 @@
 // Place all the styles related to the Groups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "font-awesome";
+
+$main-color: #3778c2;
+$second-color: #5fb523;
+$text-color: #434b54;
 
 #categories {
   display: flex;
@@ -18,9 +23,9 @@
   display: flex;
   border: 1px solid gray;
   padding: 0.5rem;
-  margin: 1rem 0 0 0;
   justify-content: space-between;
   background-color: white;
+  margin: 1rem 0 0;
 
   p {
     margin: 0 1rem;
@@ -60,4 +65,37 @@
   display: flex;
   align-items: center;
   color: black;
+}
+
+.nav_categories {
+  background-color: $main-color;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+
+.fa-bars,
+.fa-search {
+  width: 3rem;
+}
+
+.new_category_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 174, 2);
+  width: 100%;
+  height: 6rem;
+  margin: 2rem 0 0 0;
+  font-size: 2rem;
+}
+
+.new_category {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem 6rem;
 }
