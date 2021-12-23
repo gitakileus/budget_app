@@ -99,3 +99,29 @@ $text-color: #434b54;
   border: 1px solid white;
   padding: 1rem 6rem;
 }
+
+.groups_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3778c2;
+  padding: 1rem 1rem;
+}
+
+.submit {
+  color: rgba(255, 255, 255, 0.826);
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: arial, sans-serif;
+  cursor: pointer;
+}
+
+.category_inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.category_inputs input {
+  padding: 1rem;
+}
