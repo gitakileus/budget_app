@@ -15,7 +15,6 @@ class GroupsController < ApplicationController
   end
 
   def create
-    # @group = current_user.groups.build(group_params)
     @group = Group.new(group_params)
     @group.user_id = current_user.id
 

@@ -31,7 +31,7 @@ body {
 }
 
 form {
-  /* width: 100%; */
+  width: 100%;
 }
 
 #login,
@@ -51,10 +51,6 @@ form {
   text-align: center;
 }
 
-.actions_login {
-  
-}
-
 .notice_alert {
   text-align: center;
   font-size: 2rem;
@@ -62,4 +58,39 @@ form {
 
 .link_to_sign {
   text-align: center;
+}
+
+.signup_back_title {
+  background-color: #3778c2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup_back_title h2 {
+  color: white;
+  padding: 1rem 0;
+}
+
+.signup_field {
+  text-align: center;
+  width: 100%;
+}
+
+#user_name,
+#user_email,
+#user_password,
+#user_password_confirmation {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.submit_actions input {
+  color: rgba(255, 255, 255, 0.826);
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: arial, sans-serif;
+  cursor: pointer;
 }

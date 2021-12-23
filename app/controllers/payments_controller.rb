@@ -12,7 +12,6 @@ class PaymentsController < ApplicationController
   end
 
   def create
-    # @payment = current_user.payments.build(payment_params)
     @payment = Payment.new(payment_params)
     @payment.user_id = current_user.id
     @payment.group_id = Group.find_by_id(params[:group_id]).id
@@ -21,7 +20,6 @@ class PaymentsController < ApplicationController
       if @payment.save
         flash[:success] = 'Post saved successfully'
         format.html { redirect_to group_path(@payment.group_id) }
-        # format.html { redirect_to @payment }
       else
         flash.now[:error] = 'Error: Post could not be saved'
         format.html { render :new }
