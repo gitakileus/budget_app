@@ -14,7 +14,9 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = current_user.groups.build(group_params)
+    # @group = current_user.groups.build(group_params)
+    @group = Group.new(group_params)
+    @group.user_id = current_user.id
 
     respond_to do |format|
       if @group.save
@@ -31,9 +33,13 @@ class GroupsController < ApplicationController
 
   def set_group
     @group = Group.find(params[:id])
-  end 
+  end
 
   def group_params
     params.require(:group).permit(:name, :icon)
+  end
+
+  def payment_params
+    params.require(:payment).permit(:name, :amount, :group_id)
   end
 end

@@ -1,6 +1,6 @@
 <h1 class='hello_error'><%= flash[:error] %></h1>
 
-<%= form_with model: @payment, class: 'form' do |f| %>
+<%= form_with model: @payment, url: group_payments_path, class: 'form' do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 

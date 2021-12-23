@@ -1,19 +1,27 @@
 class PaymentsController < ApplicationController
+  before_action :set_payment, only: [:show]
+
   def index
     @payments = Payment.all
   end
 
+  def show; end
+
   def new
-    @payment = Payment.new
+    @payment = Group.find_by_id(params[:group_id]).payments.new
   end
 
   def create
-    @payment = current_user.payments.build(payment_params)
+    # @payment = current_user.payments.build(payment_params)
+    @payment = Payment.new(payment_params)
+    @payment.user_id = current_user.id
+    @payment.group_id = Group.find_by_id(params[:group_id]).id
 
     respond_to do |format|
       if @payment.save
         flash[:success] = 'Post saved successfully'
-        format.html { redirect_to '/payments' }
+        format.html { redirect_to group_path(@payment.group_id) }
+        # format.html { redirect_to @payment }
       else
         flash.now[:error] = 'Error: Post could not be saved'
         format.html { render :new }
@@ -21,7 +29,13 @@ class PaymentsController < ApplicationController
     end
   end
 
+  private
+
+  def set_payment
+    @payment = Payment.find(params[:id])
+  end
+
   def payment_params
-    params.require(:payment).permit(:name, :icon)
+    params.require(:payment).permit(:name, :amount)
   end
 end

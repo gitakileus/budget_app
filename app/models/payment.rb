@@ -1,5 +1,5 @@
 class Payment < ApplicationRecord
   belongs_to :user
 
-  has_many :groups, through: :user
+  belongs_to :group
 end
