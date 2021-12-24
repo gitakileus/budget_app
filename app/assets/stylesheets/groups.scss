@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "font-awesome";
 
+@font-face {
+  font-family: 'FontsFree-Net-FontsFree-Net-Proxima-Nova-Bold';
+  src: url('/assets/fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Bold.ttf');
+}
+
 $main-color: #3778c2;
 $second-color: #5fb523;
 $text-color: #434b54;
@@ -11,6 +16,7 @@ $text-color: #434b54;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'FontsFree-Net-FontsFree-Net-Proxima-Nova-Bold';
 }
 
 #groups_new {
