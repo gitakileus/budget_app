@@ -71,3 +71,20 @@ $text-color: #434b54;
   color: white;
   font-size: 2rem;
 }
+
+.payments_form {
+  background-color: #3778c2;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_amount {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.name_amount input {
+  padding: 1rem;
+}
