@@ -56,11 +56,11 @@ rspec spec/test_file_path
 
 ## Authors
 
-👤 ** Christian Erick **
+👤 **Christian Erick Contreras**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@eri8-9](https://github.com/eri8-9)
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/christian-erick/)
+- Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
 
 ## 🤝 Contributing
 
