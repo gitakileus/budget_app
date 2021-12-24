@@ -1,0 +1,24 @@
+<div id='categories'>
+  <div class='nav_categories'>
+	  <i class="fa fa-bars fa-2x"></i>
+    <h1>Categories</h1>
+    <i class="fa fa-search fa-2x"></i>
+  </div>
+
+  <% @groups.each do |group| %>
+    <%= link_to group, :action => 'go', class: 'category_link' do %>
+      <div class='category'>
+        <p class='icon'><%= group.icon %></p>
+        <div class='name_date'>
+          <p><%= group.name %></p>
+          <p><%= group.created_at.strftime('%d-%b-%Y') %></p>
+        </div>
+        <p class='total_amount'><strong>$<%= group.total_amount %></strong></p>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class='new_category_border'>
+    <%= link_to 'ADD NEW CATEGORY', '/groups/new', class: 'new_category' %>
+  </div>
+</div>

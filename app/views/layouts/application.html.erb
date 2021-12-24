@@ -11,6 +11,17 @@
   </head>
 
   <body>
+    <div class='notice_alert'>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+
+    <div class='link_to_sign'>
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.name %></strong>.
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>

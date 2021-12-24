@@ -1,0 +1,16 @@
+<div id='groups_new'>
+  <h1 class='hello_error'><%= flash[:error] %></h1>
+
+  <%= form_with model: @group, class: 'form' do |f| %>
+  <div class='groups_form'>
+    <%= link_to groups_url, class: 'signup_back' do %>
+      <i class="fa fa-arrow-left fa-2x"></i>
+    <% end %>
+    <%= f.submit class: 'submit' %>
+  </div>
+  <div class='category_inputs'>
+    <%= f.text_field :name, placeholder: 'Name' %>
+    <%= f.text_field :icon, placeholder: 'Icon' %>
+  </div>
+  <% end %>
+</div>

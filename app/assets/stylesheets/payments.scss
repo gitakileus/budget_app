@@ -1,0 +1,90 @@
+// Place all the styles related to the Payments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$main-color: #3778c2;
+$second-color: #5fb523;
+$text-color: #434b54;
+
+#payments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#payment_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_title {
+  display: flex;
+  width: 100%;
+  background-color: $main-color;
+  color: white;
+  padding: 1rem 0;
+
+  h1 {
+    margin: 0 0 0 10rem;
+  }
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 3rem;
+  border: 1px solid gray;
+  margin: 1rem 0 0 0;
+  padding: 2rem 0;
+}
+
+.fa-arrow-left {
+  color: white;
+  margin: 0 0 0 2rem;
+}
+
+.payments_section {
+  background-color: white;
+  width: 95%;
+}
+
+.total_payment {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.new_payment {
+  background-color: rgb(0, 196, 167);
+  width: 95%;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+
+.add_new_payment {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.payments_form {
+  background-color: #3778c2;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_amount {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.name_amount input {
+  padding: 1rem;
+}

@@ -12,4 +12,103 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(239, 239, 239);
+}
+
+form {
+  width: 100%;
+}
+
+#login,
+#signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  background-color: #3778c2;
+  color: white;
+}
+
+.login_bar h2 {
+  display: block;
+  text-align: center;
+}
+
+.notice_alert {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.link_to_sign {
+  text-align: center;
+}
+
+.signup_back_title {
+  background-color: #3778c2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup_back_title h2 {
+  color: white;
+  padding: 1rem 0;
+}
+
+.signup_field {
+  text-align: center;
+  width: 100%;
+}
+
+#user_name,
+#user_email,
+#user_password,
+#user_password_confirmation {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.submit_actions input {
+  color: rgba(255, 255, 255, 0.826);
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: arial, sans-serif;
+  cursor: pointer;
+}
+
+.actions_login input {
+  color: rgba(255, 255, 255, 0.826);
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: arial, sans-serif;
+  cursor: pointer;
+}
+
+.forget_password,
+.not_receive_confirmation {
+  text-decoration: none;
+  color: gray;
+}
