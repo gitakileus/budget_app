@@ -57,7 +57,7 @@ $text-color: #434b54;
   justify-content: center;
 
   p {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
   }
 }
 
@@ -110,9 +110,9 @@ $text-color: #434b54;
 
 .submit {
   color: rgba(255, 255, 255, 0.826);
-  background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   font-family: arial, sans-serif;
   cursor: pointer;
 }

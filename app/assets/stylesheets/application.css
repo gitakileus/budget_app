@@ -91,18 +91,18 @@ form {
 
 .submit_actions input {
   color: rgba(255, 255, 255, 0.826);
-  background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   font-family: arial, sans-serif;
   cursor: pointer;
 }
 
 .actions_login input {
   color: rgba(255, 255, 255, 0.826);
-  background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   font-family: arial, sans-serif;
   cursor: pointer;
 }
