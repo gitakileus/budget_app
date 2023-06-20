@@ -33,7 +33,7 @@ Have installed Ruby and Rails in your machine
 
 clone this repo with:
 ``` ruby 
-git clone https://github.com/eri8-9/budget_app
+git clone https://github.com/gitakileus/budget_app
 ```
 
 ### Install
@@ -58,24 +58,17 @@ rspec spec/test_file_path
 
 👤 **Christian Erick Contreras**
 
-- GitHub: [@eri8-9](https://github.com/eri8-9)
-- Linkedin: [LinkedIn](https://www.linkedin.com/in/christian-erick/)
-- Twitter: [@ChristianErick_](https://twitter.com/ChristianErick_)
+- GitHub: [@gitakileus](https://github.com/gitakileus)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/eri8-9/budget_app/issues).
+Feel free to check the [issues page](https://github.com/gitakileus/budget_app/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- [Microverse](https://www.microverse.org/)
-- [SnapScan Design Guideline](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 ## 📝 License
 
